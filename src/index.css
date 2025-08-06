@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gray : #333;
+  --green : #4BAE4F;
+  --light-gray : #edeef0;
+  --dark-gray : #bbb9bb;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background-color: #333;
+  min-height: 100vh;
+  width: 100%;
+  padding: 10px;
+}
+
+.todo-list {
+  background-color: #fff;
+  max-width: 540px;
+  margin: 100px auto 20px;
+  padding: 40px 30px;
+  border-radius: 10px;
+}
+.todo-list .title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.todo-list .title img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.form .form-controle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.form input {
+  padding: 14px;
+  background-color: #edeef0;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 80%;
+  font-size: 13px;
+}
+.form .btn-add {
+  padding: 10px 30px;
+  border: none;
+  background-color: var(--green);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.list-items .list-item {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  margin-top: 10px;
+}
+.list-items .list-item .custom-checkbox {
+  margin-right: 35px;
+  position: relative;
+}
+.list-items .list-item .custom-checkbox .checkmark, 
+.list-items .list-item .custom-checkbox svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+.list-items .list-item .custom-checkbox .checkmark {
+  border: 1px solid var(--gray);
+}
+
+.list-items .list-item .custom-checkbox svg {
+  background-color: var(--green);
+  padding: 3px;
+}
+
+.list-items .list-item .custom-checkbox input {
+  position :absolute;
+  left: 0;
+  top: 0;
+  margin-right: 10px;
+  opacity: 0;
+}
+.list-items .list-item .description.selected {
+  color: var(--dark-gray);
+  text-decoration: line-through;
+}
+
+.list-items .list-item .btn-close {
+  border: none;
+  color: var(--dark-gray);
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 24px;
+}
